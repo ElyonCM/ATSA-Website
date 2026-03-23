@@ -1,0 +1,158 @@
+Atue como um Engenheiro de Software Sênior e UI/UX Designer especializado em desenvolvimento web moderno.
+
+Seu objetivo é projetar e desenvolver um projeto web profissional, seguindo boas práticas de engenharia de software, arquitetura limpa, experiência do usuário e design moderno.
+
+CONTEXTO
+Estou desenvolvendo uma prototipagem profissional para ATSA.
+
+TIPO DE PROJETO
+site institucional
+
+OBJETIVO DO PROJETO
+Explique qual é o objetivo do sistema ou site e qual problema ele resolve. 
+Tem como objetivo apresentar a empresa ATSA para potencias clientes e parceiros. Para isso, o site deve conter informações sobre a empresa, seus serviços, seus diferenciais, seus valores, sua missão, sua visão, seus objetivos, seus projetos, seus parceiros, seus clientes, seus contatos, suas redes sociais, etc.
+
+━━━━━━━━━━━━━━━━━━━
+DADOS DA EMPRESA / NEGÓCIO
+━━━━━━━━━━━━━━━━━━━
+
+Nome da empresa: ATSA
+Segmento de mercado: Consultoria empresarial
+Público-alvo: Empresa de pequeno porte
+Serviços ou produtos principais: Consultoria empresarial
+
+Estilo da marca:
+corporativo e elegante
+
+Referências visuais (opcional):
+IBM, Microsoft, Google
+
+━━━━━━━━━━━━━━━━━━━
+IDENTIDADE VISUAL
+━━━━━━━━━━━━━━━━━━━
+
+Cores principais da marca: Azul e Branco
+Cores secundárias: Azul escuro e Cinza
+
+Caso cores não sejam fornecidas:
+
+1. Analise o segmento da empresa
+2. Gere uma paleta de cores profissional
+3. Defina:
+
+- cor primária
+- cor secundária
+- cor de destaque
+- cor de fundo
+- cor de texto
+
+Explique rapidamente a escolha da paleta.
+
+━━━━━━━━━━━━━━━━━━━
+TECNOLOGIAS
+━━━━━━━━━━━━━━━━━━━
+
+Utilize apenas:
+
+- HTML5 semântico
+- CSS3 moderno (Flexbox ou Grid)
+- JavaScript ES6+
+
+Evite frameworks externos, a menos que solicitado.
+
+━━━━━━━━━━━━━━━━━━━
+ARQUITETURA DO PROJETO
+━━━━━━━━━━━━━━━━━━━
+
+Organize o projeto com estrutura clara e escalável.
+
+/project
+   index.html
+   /css
+      style.css
+   /js
+      script.js
+   /assets
+      /images
+      /icons
+
+━━━━━━━━━━━━━━━━━━━
+PADRÕES DE DESENVOLVIMENTO
+━━━━━━━━━━━━━━━━━━━
+
+Siga boas práticas de engenharia de software:
+
+- código limpo e organizado
+- separação clara entre HTML, CSS e JavaScript
+- reutilização de componentes
+- nomenclatura clara para classes e funções
+- HTML semântico
+- responsividade completa
+
+━━━━━━━━━━━━━━━━━━━
+INTERFACE E UX
+━━━━━━━━━━━━━━━━━━━
+
+O projeto deve possuir:
+
+- layout moderno
+- boa hierarquia visual
+- espaçamento consistente
+- tipografia profissional
+- design limpo
+- paleta de cores consistente com a marca
+
+━━━━━━━━━━━━━━━━━━━
+ESTRUTURA DA INTERFACE
+━━━━━━━━━━━━━━━━━━━
+
+Crie as seguintes seções:
+
+- Navbar
+- Hero Section
+- Seções de conteúdo relevantes
+- Call to Action
+- Footer
+
+Caso seja um dashboard ou sistema:
+
+- sidebar
+- cards de estatísticas
+- tabelas de dados
+- gráficos ou indicadores
+
+━━━━━━━━━━━━━━━━━━━
+INTERATIVIDADE
+━━━━━━━━━━━━━━━━━━━
+
+Utilize JavaScript para:
+
+- interações de navegação
+- animações leves
+- melhorias de experiência do usuário
+- manipulação simples de elementos
+
+━━━━━━━━━━━━━━━━━━━
+ETAPAS DE DESENVOLVIMENTO
+━━━━━━━━━━━━━━━━━━━
+
+1 Planejar estrutura do projeto  
+2 Criar HTML semântico  
+3 Aplicar estilos CSS  
+4 Implementar interatividade com JavaScript  
+5 Otimizar responsividade e UX  
+
+━━━━━━━━━━━━━━━━━━━
+ENTREGA
+━━━━━━━━━━━━━━━━━━━
+
+Apresente o resultado organizado em:
+
+1. Descrição da arquitetura do projeto
+2. Paleta de cores escolhida
+3. Estrutura de pastas
+4. Código HTML completo
+5. Código CSS completo
+6. Código JavaScript completo
+7. Explicação do funcionamento
+8. Sugestões de melhorias futuras
