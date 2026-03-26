@@ -1,0 +1,53 @@
+/* CSS Variables for ATSA Theme */
+:root {
+    /* Primary Colors: Blue and White */
+    --primary-color: #0052CC;
+    --primary-dark: #0747A6;
+    --primary-light: #DEEBFF;
+    
+    /* Secondary Colors: Dark Blue and Gray */
+    --secondary-color: #0A192F;
+    --secondary-light: #172A45;
+    
+    /* Text and Backgrounds */
+    --text-main: #172B4D;
+    --text-muted: #5E6C84;
+    --bg-light: #F4F5F7;
+    --bg-white: #FFFFFF;
+    --border-color: #DFE1E6;
+    
+    /* Accent */
+    --accent-color: #00B8D9;
+
+    /* Semantic Colors */
+    --success: #36B37E;
+    --warning: #FFAB00;
+    --error: #FF5630;
+    --info: #0052CC;
+    
+    /* UI States Alpha Colors */
+    --overlay-bg: rgba(9, 30, 66, 0.54);
+}
+
+/* Dark mode Native support via preferences */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --text-main: #F4F5F7;
+        --text-muted: #A0AABF;
+        --bg-light: #0B1121;
+        --bg-white: #0A192F;
+        --border-color: #172A45;
+        --secondary-color: #FFFFFF;
+        /* Keep primary colors the same to retain brand identity */
+    }
+}
+
+/* Explicit Dark Theme override via toggle */
+:root[data-theme="dark"] {
+    --text-main: #F4F5F7;
+    --text-muted: #A0AABF;
+    --bg-light: #0B1121;
+    --bg-white: #0A192F;
+    --border-color: #172A45;
+    --secondary-color: #FFFFFF;
+}

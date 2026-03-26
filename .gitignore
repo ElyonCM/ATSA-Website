@@ -1,0 +1,18 @@
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project folders to ignore
+Excel/
+Prompt/
+node_modules/
+.npm/
+package-lock.json
+
+# Temporary files
+*.tmp
+*.log

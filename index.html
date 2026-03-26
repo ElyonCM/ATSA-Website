@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATSA | Consultoria Empresarial</title>
-    <meta name="description" content="A ATSA é uma consultoria empresarial focada em impulsionar o crescimento de pequenas empresas com estratégias corporativas e inovação.">
+    <title>ATSA | Consultoria Empresarial e TI</title>
+    <meta name="description" content="A ATSA é uma consultoria empresarial e de TI focada em impulsionar o crescimento de empresas de pequeno, médio e grande porte com estratégias corporativas e inovação.">
+    
+    <!-- Open Graph / Twitter Meta Tags -->
+    <meta property="og:title" content="ATSA | Consultoria Empresarial e TI">
+    <meta property="og:description" content="A ATSA é uma consultoria empresarial e de TI focada em impulsionar o crescimento de empresas de pequeno, médio e grande porte com estratégias corporativas e inovação.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ATSA Consultoria",
+      "url": "https://atsaconsultoria.com.br",
+      "description": "Consultoria empresarial e de TI inteligente para impulsionar empresas de pequeno, médio e grande porte.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Prevent Dark Mode Flash -->
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
 </head>
 <body>
     <!-- Navbar Navigation -->
@@ -19,6 +51,10 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#diferenciais">Diferenciais</a>
                 <a href="#contato" class="btn btn-primary">Fale Conosco</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema escuro/claro">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
             </nav>
             <div class="menu-toggle" id="mobile-menu" aria-label="Abrir menu">
                 <span class="bar"></span>
@@ -33,7 +69,7 @@
         <section id="home" class="hero">
             <div class="container hero-content">
                 <h1>Transforme o <span>Futuro</span> da sua Empresa</h1>
-                <p>Consultoria estratégica especializada para impulsionar o crescimento sustentável de negócios de pequeno porte. Soluções inovadoras inspiradas nos líderes de mercado.</p>
+                <p>Consultoria estratégica e de TI especializada para impulsionar o crescimento sustentável de empresas de pequeno, médio e grande porte. Soluções inovadoras inspiradas nos líderes de mercado com um atendimento acolhedor e humano.</p>
                 <div class="hero-actions">
                     <a href="#servicos" class="btn btn-primary">Conheça as Soluções</a>
                     <a href="#contato" class="btn btn-outline">Agendar Reunião</a>
@@ -46,9 +82,9 @@
             <div class="container about-grid">
                 <div class="about-text animate-on-scroll">
                     <h2>Sobre a ATSA</h2>
-                    <p>A ATSA é uma firma de consultoria empresarial dedicada a ajudar empresas de pequeno porte a alcançarem novos patamares de excelência operacional e estratégica.</p>
+                    <p>A ATSA é uma firma de consultoria empresarial e de TI dedicada a ajudar empresas de todos os portes a alcançarem novos patamares de excelência operacional e tecnológica.</p>
                     <ul class="values-list">
-                        <li><strong>Missão:</strong> Capacitar pequenas empresas rumo ao sucesso no mercado competitivo.</li>
+                        <li><strong>Missão:</strong> Capacitar empresas rumo ao sucesso em um mercado competitivo.</li>
                         <li><strong>Visão:</strong> Ser referência nacional em soluções de consultoria acessíveis e eficientes.</li>
                         <li><strong>Valores:</strong> Inovação, transparência, foco em resultados e parceria contínua.</li>
                     </ul>
@@ -70,7 +106,7 @@
                     <div class="service-card animate-on-scroll">
                         <div class="icon">📈</div>
                         <h3>Estratégia de Negócios</h3>
-                        <p>Planejamento estratégico eficiente focado no aumento de lucratividade e expansão de mercado para pequenas empresas.</p>
+                        <p>Planejamento estratégico eficiente focado no aumento de lucratividade e expansão de mercado corporativo.</p>
                     </div>
                     <div class="service-card animate-on-scroll">
                         <div class="icon">⚙️</div>
@@ -91,7 +127,7 @@
             <div class="container diff-container">
                 <div class="diff-content animate-on-scroll">
                     <h2>Por que escolher a ATSA?</h2>
-                    <p>Combinamos metodologias corporativas de alto nível com a agilidade necessária para o dia a dia de pequenos negócios, trazendo resultados rápidos e duradouros.</p>
+                    <p>Combinamos metodologias corporativas de alto nível com a agilidade necessária para o dia a dia de empresas de todos os portes, trazendo resultados rápidos e duradouros.</p>
                     <div class="diff-items">
                         <div class="diff-item">
                             <h4>Equipe Especializada</h4>
@@ -124,9 +160,16 @@
                         <input type="text" id="name" placeholder="Nome Completo" required aria-label="Seu nome">
                     </div>
                     <div class="form-group">
+                        <input type="text" id="company" placeholder="Nome da Empresa" required aria-label="Nome da sua empresa">
+                    </div>
+                    <div class="form-group">
                         <input type="email" id="email" placeholder="E-mail Profissional" required aria-label="Seu e-mail profissional">
                     </div>
                     <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Telefone (ex: 92 99999-9999)" required aria-label="Seu telefone"
+                            pattern="[0-9\s\-\(\)]+">
+                        </div>
+                        <div class="form-group">
                         <select id="subject" required aria-label="Assunto">
                             <option value="">Qual o seu principal desafio?</option>
                             <option value="estrategia">Estratégia de Negócios</option>
@@ -135,7 +178,7 @@
                             <option value="outros">Outros</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="submitBtn">Solicitar Contato Especializado</button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Enviar Contato</button>
                 </form>
             </div>
         </section>
@@ -146,7 +189,7 @@
         <div class="container footer-content">
             <div class="footer-brand">
                 <h3>ATSA<span>.</span></h3>
-                <p>Consultoria empresarial inteligente para impulsionar pequenos negócios. Transformando visões em realidades estruturadas.</p>
+                <p>Consultoria empresarial e de TI inteligente para impulsionar negócios de pequeno, médio e grande porte. Transformando visões em realidades estruturadas.</p>
             </div>
             <div class="footer-links">
                 <h4>Navegação</h4>
@@ -167,6 +210,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
