@@ -16,15 +16,18 @@ Na mesma pasta execute:
 node server.js
 ```
 
-### 3. Liberar para Celular/Tablet (Opcional)
-Se quiser que o formulário funcione em **qualquer dispositivo** (mesmo fora do Wi-Fi), abra um NOVO terminal na pasta `ATSA-Backend` e execute:
+### 3. Acesso via Celular/Tablet (Permanente no Wi-Fi)
+Para que o formulário funcione no celular sem precisar trocar links:
+1. Certifique-se de que o Celular e o Computador estão no **mesmo Wi-Fi**.
+2. O site já está configurado para o seu IP atual: `192.168.0.228`.
+3. Se o seu IP mudar futuramente, basta atualizar a variável `API_URL` no arquivo `js/modules/form.js`.
+
+### 4. Acesso via 4G/Externo (Opcional)
+Se precisar testar fora de casa, use o LocalTunnel:
 ```bash
 npx localtunnel --port 3001
 ```
-O terminal dará um link (ex: `https://early-gifts-sip.loca.lt`). **Você deve copiar esse link e atualizar a variável `API_URL` no arquivo `js/modules/form.js` do seu site.**
-
-### 4. Abrir o Painel Admin
-Acesse seu link público ou **http://localhost:3001** no navegador para ver todos os contatos.
+E use o link gerado no `form.js`.
 
 ### 4. Usar o site normalmente
 Com o servidor rodando, basta abrir o site ATSA normalmente. Quando alguém preencher o formulário e apertar "Enviar Contato", os dados serão automaticamente salvos no backend e visíveis no painel.
