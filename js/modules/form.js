@@ -10,9 +10,9 @@ export function initForm() {
     // WhatsApp Number configuration
     const WHATSAPP_NUMBER = '5521992528480';
 
-    // URL do Backend Local (ATSA-Backend) que armazena os contatos e gera Excel
-    // Rode o servidor com: cd ATSA-Backend && node server.js
-    const API_URL = 'http://localhost:3001/api/contatos';
+    // URL do Backend (Local ou Público via Túnel)
+    // Para funcionar no Celular/4G, use o link do LocalTunnel abaixo:
+    const API_URL = 'https://early-gifts-sip.loca.lt/api/contatos';
 
     if (contactForm && submitBtn) {
         

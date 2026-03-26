@@ -15,14 +15,16 @@ Na mesma pasta execute:
 ```bash
 node server.js
 ```
-O terminal vai exibir:
-```
-🚀 Backend ATSA rodando em: http://localhost:3001
-📊 Painel Admin:            http://localhost:3001
-```
 
-### 3. Abrir o Painel Admin
-Acesse **http://localhost:3001** no navegador para ver todos os contatos recebidos, buscar, excluir e baixar o arquivo Excel.
+### 3. Liberar para Celular/Tablet (Opcional)
+Se quiser que o formulário funcione em **qualquer dispositivo** (mesmo fora do Wi-Fi), abra um NOVO terminal na pasta `ATSA-Backend` e execute:
+```bash
+npx localtunnel --port 3001
+```
+O terminal dará um link (ex: `https://early-gifts-sip.loca.lt`). **Você deve copiar esse link e atualizar a variável `API_URL` no arquivo `js/modules/form.js` do seu site.**
+
+### 4. Abrir o Painel Admin
+Acesse seu link público ou **http://localhost:3001** no navegador para ver todos os contatos.
 
 ### 4. Usar o site normalmente
 Com o servidor rodando, basta abrir o site ATSA normalmente. Quando alguém preencher o formulário e apertar "Enviar Contato", os dados serão automaticamente salvos no backend e visíveis no painel.
