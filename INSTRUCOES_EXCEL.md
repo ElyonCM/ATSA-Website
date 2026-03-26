@@ -16,18 +16,15 @@ Na mesma pasta execute:
 node server.js
 ```
 
-### 3. Acesso via Celular/Tablet (Permanente no Wi-Fi)
-Para que o formulário funcione no celular sem precisar trocar links:
-1. Certifique-se de que o Celular e o Computador estão no **mesmo Wi-Fi**.
-2. O site já está configurado para o seu IP atual: `192.168.0.228`.
-3. Se o seu IP mudar futuramente, basta atualizar a variável `API_URL` no arquivo `js/modules/form.js`.
+### 3. Acesso à Nuvem (Definitivo)
+Seu sistema agora está hospedado no Render! Não é mais necessário ligar o computador ou rodar comandos locais para que o site receba contatos.
 
-### 4. Acesso via 4G/Externo (Opcional)
-Se precisar testar fora de casa, use o LocalTunnel:
-```bash
-npx localtunnel --port 3001
-```
-E use o link gerado no `form.js`.
+- **Link do Painel Admin:** [https://atsa-backend.onrender.com](https://atsa-backend.onrender.com)
+- **Banco de Dados:** Os dados estão salvos permanentemente no MongoDB Atlas.
+
+### 4. Uso Diário
+1. O site ATSA já está configurado para o seu link de produção.
+2. Acesse o Painel Admin via link acima para ver os leads, baixar Excel ou gerenciar os contatos.
 
 ### 4. Usar o site normalmente
 Com o servidor rodando, basta abrir o site ATSA normalmente. Quando alguém preencher o formulário e apertar "Enviar Contato", os dados serão automaticamente salvos no backend e visíveis no painel.

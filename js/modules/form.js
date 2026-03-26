@@ -10,12 +10,9 @@ export function initForm() {
     // WhatsApp Number configuration
     const WHATSAPP_NUMBER = '5521992528480';
 
-    // URL do Backend (Detecção Automática)
-    // No PC usa localhost, no Celular usa o IP fixo da sua máquina no Wi-Fi
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    const API_URL = isLocal 
-        ? 'http://localhost:3001/api/contatos' 
-        : 'http://192.168.0.228:3001/api/contatos';
+    // URL do Backend em Produção (Render)
+    // Este link é fixo e funciona em qualquer dispositivo/rede.
+    const API_URL = 'https://atsa-backend.onrender.com/api/contatos';
 
     if (contactForm && submitBtn) {
         
